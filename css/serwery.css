@@ -1,0 +1,128 @@
+/* Ogólne ustawienia sekcji z serwerami */
+.connection-guide {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #222; /* Ciemne tło sekcji */
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.section-left, .section-right {
+    width: 48%; /* Dzielimy przestrzeń na dwie sekcje */
+    background-color: #333; /* Ciemne tło dla sekcji */
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+h2 {
+    color: #1E88E5; /* Niebieski kolor nagłówków w sekcji połączenia */
+}
+
+/* Styl dla sekcji z połączeniem do serwera */
+.connection-guide .section-left {
+    background-color: #2a2a2a; /* Cięższy odcień tła dla lewego panelu */
+}
+
+.connection-guide .section-left p {
+    color: #ddd; /* Jasny tekst */
+}
+
+.connection-guide .section-left ul {
+    color: #ddd;
+    list-style: none;
+}
+
+.connection-guide .section-left li {
+    margin: 5px 0;
+}
+
+/* Styl dla serwera */
+.serwer-item {
+    display: flex;
+    align-items: center;
+    background-color: #2c2c2c;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.game-icon img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+/* Styl dla danych o serwerze */
+.game-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.game-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFEB3B; /* Złocisty kolor dla nazw gier */
+}
+
+.game-ip-port {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.game-ip, .game-port {
+    margin: 5px 0;
+    color: #ddd;
+}
+
+/* Styl dla przycisku "Dołącz" */
+.join-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Kolory przycisków w zależności od gry */
+.unturned {
+    background-color: #4CAF50; /* Zielony dla Unturned */
+}
+
+.rust {
+    background-color: #D32F2F; /* Czerwony dla Rust */
+}
+
+.minecraft {
+    background-color: #FFEB3B; /* Żółty dla Minecraft */
+}
+
+/* Efekt na przycisk po najechaniu */
+.join-button:hover {
+    background-color: #555;
+}
+
+/* Stopniowe dopasowanie do urządzeń mobilnych */
+@media (max-width: 768px) {
+    .connection-guide {
+        flex-direction: column;
+    }
+
+    .section-left, .section-right {
+        width: 100%;
+    }
+
+    .serwer-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
